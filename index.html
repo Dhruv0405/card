@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="effect.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="content">
+                <h2>01</h2>
+                <h3>Card one</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, facere!</p>
+            </div>
+        </div>
+        <div class="card1">
+            <div class="content">
+                <h2>02</h2>
+                <h3>Card Two</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, voluptates!</p>       </div>
+        </div>
+        <div class="card2">
+            <div class="content">
+                <h2>03</h2>
+                <h3>Card Three</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, voluptates!</p>       </div>
+        </div>
+    </div>
+    
+</body>
+<script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelector(".card"),{
+		max: 25,
+		speed: 400,
+        glare: true,
+        "max-glare":3,
+	});
+    </script>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelector(".card1"),{
+		max: 25,
+		speed: 400,
+        glare: true,
+        "max-glare":3,
+	});
+    </script>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelector(".card2"),{
+		max: 25,
+		speed: 400,
+        glare: true,
+        "max-glare":3,
+	});
+    </script>
+</html>

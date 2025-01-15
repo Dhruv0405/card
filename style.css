@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Labrada:wght@100&family=Pacifico&display=swap');
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Labrada', serif;
+    font-family: 'Pacifico', cursive;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: black;
+
+}
+
+body::before{
+    content: '';
+    background: linear-gradient(rgb(247, 11, 7), rgb(239, 133, 4), rgb(128, 102, 0));
+clip-path: circle(20% at left 70%) ;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+position: absolute;
+}
+
+body::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width:100%;
+    background: linear-gradient(rgb(9, 246, 234), blue, rgb(245, 4, 181));
+    clip-path: circle(30% at right 10%);
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+  
+}
+
+.card{
+   position: relative;
+   height: 500px;
+   width: 280px;
+   margin: 30px;
+   box-shadow: 20px  20px 50px rgba(0, 0, 0, 0.5) ;
+   border-radius: 20px ;
+   -webkit-border-radius: 20px ;
+   -moz-border-radius: 20px ;
+   -ms-border-radius: 20px ;
+   -o-border-radius: 20px ;
+   background: rgba(255, 255, 255, 0.1);
+   overflow: hidden;
+   display: flex;
+   border-top: 1px solid rgba( 255, 255, 255, 0.5);
+   border-left: 1px solid rgba( 255, 255, 255, 0.5);
+   backdrop-filter: blur(20px);
+
+}
+.content{
+    padding: 20px;
+    text-align: center;
+    transform:translateY(100px) ;
+    -webkit-transform:translateY(100px) ;
+    -moz-transform:translateY(100px) ;
+    -ms-transform:translateY(100px) ;
+    -o-transform:translateY(100px) ;
+    opacity: 0;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.content:hover{
+    opacity: 1;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+}
+.content h2{
+    padding: 20px;
+    top: -40px;
+    font-size: 8em;
+    color: white;
+}
+.content h3{
+font-size: 1.8em;
+color: white;
+font-weight: 300;
+
+
+}
+.content p{
+    font-size: 1.2em;
+    color: white;
+    font-weight: 300;
+    
+    
+    }
+
+
+    .card1{
+        position: relative;
+        height: 500px;
+        width: 280px;
+        margin: 30px;
+        box-shadow: 20px  20px 50px rgba(0, 0, 0, 0.5) ;
+        border-radius: 20px ;
+        -webkit-border-radius: 20px ;
+        -moz-border-radius: 20px ;
+        -ms-border-radius: 20px ;
+        -o-border-radius: 20px ;
+        background: rgba(255, 255, 255, 0.1);
+        overflow: hidden;
+        display: flex;
+        border-top: 1px solid rgba( 255, 255, 255, 0.5);
+        border-left: 1px solid rgba( 255, 255, 255, 0.5);
+        backdrop-filter: blur(20px);
+     
+     }
+     .card2{
+        position: relative;
+        height: 500px;
+        width: 280px;
+        margin: 30px;
+        box-shadow: 20px  20px 50px rgba(0, 0, 0, 0.5) ;
+        border-radius: 20px ;
+        -webkit-border-radius: 20px ;
+        -moz-border-radius: 20px ;
+        -ms-border-radius: 20px ;
+        -o-border-radius: 20px ;
+        background: rgba(255, 255, 255, 0.1);
+        overflow: hidden;
+        display: flex;
+        border-top: 1px solid rgba( 255, 255, 255, 0.5);
+        border-left: 1px solid rgba( 255, 255, 255, 0.5);
+        backdrop-filter: blur(20px);
+     
+     }
